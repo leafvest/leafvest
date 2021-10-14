@@ -109,7 +109,7 @@ app.layout = html.Div([
                         selected_style={'font-weight': 'bold', 
                                         'color': '#1A9968', 
                                         'borderTop': '2px solid #1A9968'}),
-            ], style={"padding": "25px"}),
+            ], style={"padding-top": "45px", "padding-right": "200px"}),
         ], className="nine columns")
     ], className="row"),
     
@@ -124,8 +124,9 @@ app.layout = html.Div([
     # Chosen Page (Main, Company, etc.)
     html.Div([html.Div(id='tabs-content')], 
     className="row", 
-    style={"padding-left": "25px",
-           "padding-right": "25px"}),
+    style={"padding-top": "10px",
+           "padding-left": "50px",
+           "padding-right": "50px"}),
 ])
 
 
