@@ -49,7 +49,7 @@ facility_company_year_data = pd.read_csv('data/facility_company_year.csv')
 # Basic Dash App Info
 # --------------------------------------------------------
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.title = 'GreenVest'
+app.title = 'leafvest'
 server = app.server
 suppress_callback_exceptions=True
 logo_src = os.getcwd() + '/assets/leafvest.png'
@@ -66,7 +66,7 @@ app.layout = html.Div([
     html.Div([ 
         # Logo
         html.Div([
-            html.Img(src=app.get_asset_url('greenvest_logo.png'), 
+            html.Img(src=app.get_asset_url('assets/leafvest.png'), 
                      height=LOGO_HEIGHT,
                      style={"padding": "25px"}),
         ], className="one columns"),
