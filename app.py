@@ -55,7 +55,7 @@ suppress_callback_exceptions=True
 logo_src = os.getcwd() + '/assets/leafvest.png'
 
 
-LOGO_HEIGHT = 75
+LOGO_HEIGHT = 100
 LOGO_HEIGHT_MAX = 100
 
 
@@ -66,15 +66,15 @@ app.layout = html.Div([
     html.Div([ 
         # Logo
         html.Div([
-            html.Img(src=app.get_asset_url('assets/leafvest.png'), 
+            html.Img(src=app.get_asset_url('leafvest.png'), 
                      height=LOGO_HEIGHT,
                      style={"padding": "25px"}),
         ], className="one columns"),
         
         # Company Name and Slogan
         html.Div([ 
-            html.H2('GreenVest', style={'color': '#1A9968', 'font-weight': 'bold'}),
-            html.H5('Hello DS3500 class :)', style={"marginTop": "-10px"})
+            html.H2('Leafvest', style={"font-family": "Trebuchet MS", 'color': '#1A9968', "marginTop": "35px"}),
+            html.H5('invest in green', style={"font-family": "Trebuchet MS", "marginTop": "-20px"})
         ], className="two columns"),
         
         # Tabs
