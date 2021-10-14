@@ -52,7 +52,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = 'GreenVest'
 server = app.server
 suppress_callback_exceptions=True
-logo_src = os.getcwd() + '/logo/greenvest_logo.png'
+logo_src = os.getcwd() + '/assets/leafvest.png'
 
 
 LOGO_HEIGHT = 75
