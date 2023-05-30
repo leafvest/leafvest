@@ -2,9 +2,7 @@ from math import e
 import os
 import re
 
-import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
+from dash import Dash, callback, html, dcc, dash_table, Input, Output, State, MATCH, ALL
 
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -47,7 +45,7 @@ facility_company_year_data = pd.read_csv('data/facility_company_year.csv')
 # --------------------------------------------------------
 # Basic Dash App Info
 # --------------------------------------------------------
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = 'leafvest'
 server = app.server
 suppress_callback_exceptions=True
@@ -1390,5 +1388,5 @@ def render_content(tab):
 # Run App
 # --------------------------------------------------------
 if __name__ == '__main__':
-    port = os.environ.get['PORT', 8050]
+    port = os.environ.get('PORT', 8050)
     app.run_server(debug=True, port=port)
