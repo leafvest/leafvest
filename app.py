@@ -1,13 +1,9 @@
-from math import e
 import os
-
-from dash import Dash, callback, html, dcc, dash_table, Input, Output, State, MATCH, ALL
-
+from dash import Dash, callback, html, dcc, Input, Output, State
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.validator_cache # need to solve circular dependency
-
 import pandas as pd
 import yfinance as yf
 
@@ -1388,4 +1384,4 @@ def render_content(tab):
 # --------------------------------------------------------
 if __name__ == '__main__':
     port = os.environ.get('PORT', 8050)
-    app.run_server(debug=True, port=port)
+    app.run(host='0.0.0.0', debug=True, port=port)
