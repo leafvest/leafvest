@@ -1,6 +1,5 @@
 from math import e
 import os
-import re
 
 from dash import Dash, callback, html, dcc, dash_table, Input, Output, State, MATCH, ALL
 
